@@ -61,29 +61,29 @@ fetchData(API, function (error1, data1) {
 		if (error2) return console.error(error2);
 		fetchData(data2.origin.url, function (error3, data3) {
 			if (error3) return console.error(error3);
-			console.log(data1.info.count);
-			console.log(data2.name);
-			console.log(data3.dimension);
+			console.log(data1.info.count); //Trae el número de personajes de la API
+			console.log(data2.name); //De esa lista, trae el nombre del primer personaje
+			console.log(data3.dimension); //Del primer personaje, trae la dimensión de donde es ese primer personaje
 		});
 	});
 });
 
-fetchData(API, function (error1, data1) {
-	if (error1) {
-		return console.error(error1);
-	} else {
-		fetchData(
-			API +
-				data1.results.map(function (a) {
-					return a.name;
-				}),
-			function (error2, data2) {
-				if (error2) {
-					return console.error(error2);
-				} else {
-					console.log(data2);
-				}
-			}
-		);
-	}
-});
+// fetchData(API, function (error1, data1) {
+// 	if (error1) {
+// 		return console.error(error1);
+// 	} else {
+// 		fetchData(
+// 			API +
+// 				data1.results.map(function (a) {
+// 					return a.name;
+// 				}),
+// 			function (error2, data2) {
+// 				if (error2) {
+// 					return console.error(error2);
+// 				} else {
+// 					console.log(data2);
+// 				}
+// 			}
+// 		);
+// 	}
+// });
