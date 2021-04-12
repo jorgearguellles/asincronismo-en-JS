@@ -4,7 +4,8 @@
 	"description": "Learning abput async/awaut, promesis and callbaks",
 	"main": "src/index.js",
 	"scripts": {
-		"callback": "node src/callback/index.js"
+		"callback": "node src/callback/index.js",
+		"callback:Exercise": "node src/callback/exercise.js"
 	},
 	"repository": {
 		"type": "git",
