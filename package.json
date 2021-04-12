@@ -1,0 +1,24 @@
+{
+	"name": "asincronismo-en-js",
+	"version": "1.0.0",
+	"description": "Learning abput async/awaut, promesis and callbaks",
+	"main": "src/index.js",
+	"scripts": {
+		"callback": "node src/callback/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jorgearguellles/asincronismo-en-JS.git"
+	},
+	"keywords": [
+		"callback",
+		"promises",
+		"async"
+	],
+	"author": "Jorge Arias Argüelles",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/jorgearguellles/asincronismo-en-JS/issues"
+	},
+	"homepage": "https://github.com/jorgearguellles/asincronismo-en-JS#readme"
+}
