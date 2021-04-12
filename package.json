@@ -20,5 +20,8 @@
 	"bugs": {
 		"url": "https://github.com/jorgearguellles/asincronismo-en-JS/issues"
 	},
-	"homepage": "https://github.com/jorgearguellles/asincronismo-en-JS#readme"
+	"homepage": "https://github.com/jorgearguellles/asincronismo-en-JS#readme",
+	"dependencies": {
+		"xmlhttprequest": "^1.8.0"
+	}
 }

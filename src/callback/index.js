@@ -20,7 +20,7 @@ console.log(calculate(10, 20, plus));
 //Example:
 
 function date(callback) {
-	// console.log(new Date());
+	console.log(new Date());
 
 	setTimeout(function () {
 		let date = new Date();
