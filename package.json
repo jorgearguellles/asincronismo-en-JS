@@ -8,6 +8,7 @@
 		"callback:Exercise": "node src/callback/exercise.js",
 		"promises": "node src/promises/index.js",
 		"promises:Challenge": "node src/promises/challenge.js",
+		"promises:Example": "node src/promises/example.js",
 		"async": "node src/async-await/index.js"
 	},
 	"repository": {

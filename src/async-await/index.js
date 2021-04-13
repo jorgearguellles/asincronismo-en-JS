@@ -4,9 +4,7 @@ const doSomethingAsync = () => {
 		true
 			? setTimeout(
 					() =>
-						resolve(
-							`Yes, we can do something Async, past: ${time} milisegundos`
-						),
+						resolve(`Yes, we do something Async, past: ${time} milisegundos`),
 					`${time}`
 			  )
 			: reject(new Error("No, we can do something Async"));
@@ -20,6 +18,21 @@ const doSomething = async () => {
 	console.log(something);
 };
 
-console.log("Before:");
+console.log("Before1:");
 doSomething();
-console.log("After:");
+console.log("After1:");
+
+//Example 2: Async
+
+const another = async () => {
+	try {
+		const something = await doSomethingAsync();
+		console.log(something);
+	} catch (error) {
+		console.error(error);
+	}
+};
+
+console.log("Before2:");
+another();
+console.log("After2:");
